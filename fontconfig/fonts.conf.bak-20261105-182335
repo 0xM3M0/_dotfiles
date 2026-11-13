@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+
+    <!-- 1. الإعدادات العامة لجودة العرض -->
+    <match target="font">
+        <edit name="antialias" mode="assign"><bool>true</bool></edit>
+        <edit name="hinting" mode="assign"><bool>true</bool></edit>
+        <edit name="autohint" mode="assign"><bool>false</bool></edit>
+        <edit name="hintstyle" mode="assign"><const>hintslight</const></edit>
+        <edit name="rgba" mode="assign"><const>rgb</const></edit>
+        <!-- ⬇️ إضافة حرجة: فلتر الـ LCD لمنع الألوان الشاذة -->
+        <edit name="lcdfilter" mode="assign"><const>lcddefault</const></edit>
+        <!-- ⬇️ تعطيل الـ bitmap المدمج في الخطوط -->
+        <edit name="embeddedbitmap" mode="assign"><bool>false</bool></edit>
+    </match>
+
+    <!-- 2. استثناء لخط IBM Plex العربي -->
+    <match target="font">
+        <test name="family" compare="eq"><string>IBM Plex Sans Arabic</string></test>
+        <edit name="autohint" mode="assign"><bool>true</bool></edit>
+    </match>
+
+    <!-- 3. ضبط الـ DPI (عدّل القيمة حسب شاشتك) -->
+    <match target="pattern">
+        <edit name="dpi" mode="assign"><double>96</double></edit>
+    </match>
+
+    <!-- 4. ترتيب خطوط Sans-Serif -->
+    <alias>
+        <family>sans-serif</family>
+        <prefer>
+            <family>Inter</family>
+            <family>IBM Plex Sans Arabic</family>
+            <family>Symbols Nerd Font</family>
+        </prefer>
+    </alias>
+
+    <!-- 5. ترتيب خطوط Monospace -->
+    <alias>
+        <family>monospace</family>
+        <prefer>
+            <family>CaskaydiaCove Nerd Font</family>
+            <family>IBM Plex Sans Arabic</family>
+            <family>Symbols Nerd Font</family>
+        </prefer>
+    </alias>
+
+    <!-- 6. ترتيب خطوط Serif -->
+    <alias>
+        <family>serif</family>
+        <prefer>
+            <family>Noto Serif</family>
+            <family>IBM Plex Sans Arabic</family>
+            <family>Symbols Nerd Font</family>
+        </prefer>
+    </alias>
+
+</fontconfig>

@@ -1,0 +1,45 @@
+{
+  "quickCapture": {
+    "enabled": true,
+    "screenshotBackend": "dms",
+    "includeCursor": false,
+    "defaultHideControlCenter": true,
+    "recordSystemAudio": true,
+    "recordingCodec": "h264",
+    "recordingQuality": "high",
+    "showPillBorder": false,
+    "usageGuideExpanded": true,
+    "rightClickAction": "region"
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "emojiLauncher": {
+    "enabled": true
+  },
+  "dockerManager": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": true,
+    "workDuration": "60",
+    "shortBreakDuration": "15",
+    "longBreakDuration": "20",
+    "autoStartBreaks": true,
+    "autoStartPomodoros": true,
+    "autoSetDND": true,
+    "showBarText": true,
+    "longBreakFrequency": 5
+  },
+  "dcalUpcoming": {
+    "enabled": false
+  },
+  "dankNotepadModule": {
+    "enabled": true
+  },
+  "bongoCat": {
+    "enabled": false,
+    "catYOffset": -1
+  }
+}

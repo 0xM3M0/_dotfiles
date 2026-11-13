@@ -1,0 +1,40 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "bongoCat": {
+      "repo": "https://github.com/hthienloc/dms-bongo-cat",
+      "commit": "237b1a34b2fb8d90e4f4c8656af758c3d7dab638"
+    },
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "c9fbbe921e9afeb92f4e92390e9fc05f006f0373"
+    },
+    "dankNotepadModule": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankNotepadModule",
+      "commit": "e06aa40b1cb2b9ce50d3ee75f2874af05ae1763f"
+    },
+    "dankPomodoroTimer": {
+      "repo": "https://github.com/duxlabs-dev/dux-plugins",
+      "path": "DankPomodoroTimer",
+      "commit": "e06aa40b1cb2b9ce50d3ee75f2874af05ae1763f"
+    },
+    "dcalUpcoming": {
+      "repo": "https://github.com/leoamaro01/dms-dcal",
+      "commit": "8a140c03231a06cbf2cc3754312477c4e9aaadaa"
+    },
+    "dockerManager": {
+      "repo": "https://github.com/LuckShiba/DmsDockerManager",
+      "commit": "f6f7d94c84510da098980a2bb733137e90f98fd8"
+    },
+    "emojiLauncher": {
+      "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
+      "commit": "8ff394e3ddfcb2fd755ed2e7b4c6f01f3e26e596"
+    },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "b7ec1d6cd0fa1d42cab7c2f5996305c34897275c"
+    }
+  }
+}
