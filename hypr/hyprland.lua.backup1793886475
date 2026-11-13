@@ -1,0 +1,37 @@
+-- Hyprland Lua Configuration (Modular)
+
+local home = os.getenv("HOME")
+
+-- 1. Variables (Must be loaded first)
+dofile(home .. "/.config/hypr/vars.lua")
+
+-- 2. Environment & Monitors
+dofile(home .. "/.config/hypr/envs.lua")
+dofile(home .. "/.config/hypr/monitors.lua")
+
+-- 3. Autostart
+dofile(home .. "/.config/hypr/autostart.lua")
+
+-- 4. Look, Feel & Behavior (Must be loaded after colors)
+dofile(home .. "/.config/hypr/look.lua")
+dofile(home .. "/.config/hypr/input.lua")
+dofile(home .. "/.config/hypr/keybindings.lua")
+dofile(home .. "/.config/hypr/windows.lua")
+
+
+-- DMS Include Configs
+require("dms.layout")
+require("dms.binds")
+require("dms.binds-user")
+require("dms.outputs")
+require("dms.windowrules")
+require("dms.cursor")
+
+-- Final overrides (must load AFTER DMS-generated files)
+hl.config({
+    decoration = { blur = { passes = 2, size = 5 } },
+    general = {
+        border_size = 2,
+        ["col.inactive_border"] = "rgba(00000000)",
+    },
+})
